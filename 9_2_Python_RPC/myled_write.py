@@ -1,6 +1,6 @@
 import serial
 import time
-serdev = '/dev/ttyACM3'                # use the device name you get from `ls /dev/ttyACM*`
+serdev = '/dev/ttyACM0'                # use the device name you get from `ls /dev/ttyACM*`
 s = serial.Serial(serdev, 9600)
 
 s.write(bytes("/myled/write 1\r", 'UTF-8'))
